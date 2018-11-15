@@ -1,6 +1,6 @@
 {
   "name": "dich_vu_du_lieu",
-  "version": "2.2.13",
+  "version": "2.2.14",
   "description": "Dịch vụ dữ liệu",
   "main": "index.js",
   "scripts": {
