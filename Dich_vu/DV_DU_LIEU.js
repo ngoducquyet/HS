@@ -34,6 +34,7 @@ var Dich_vu = NodeJs_Dich_vu.createServer((Yeu_cau, Dap_ung) => {
     var Ma_so_Xu_ly = Tham_so.Ma_so_Xu_ly
     var Chuoi_Kq = ""
     if (Ma_so_Xu_ly == "Doc_Danh_sach_Dien_thoai") {
+      //http://localhost:1000/Ma_so_Xu_ly=Doc_Danh_sach_Dien_thoai
       var Doi_tuong_Kq = {}
       Doi_tuong_Kq.Danh_sach_Dien_thoai = Du_lieu.Danh_sach_Dien_thoai
       Doi_tuong_Kq.Cua_hang = Du_lieu.Cua_hang

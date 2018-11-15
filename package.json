@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "dich_vu_du_lieu",
   "version": "11.11.39",
   "description": "Dịch vụ dữ liệu",
@@ -9,9 +9,9 @@
   "keywords": [
     "12345"
   ],
-  "author": "quyetngo",
+  "author": "natuan",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^3.1.9"
+    "mongodb": "^3.1.6"
   }
 }
