@@ -1,4 +1,4 @@
-
+//http://localhost:1000/Ma_so_Xu_ly=Doc_Danh_sach_Dien_thoai
 var NodeJs_Dich_vu = require("http")
 var Luu_tru = require("../Xu_ly/XL_LUU_TRU")
 var Port = 1000
