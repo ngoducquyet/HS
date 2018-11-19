@@ -1,0 +1,15 @@
+# vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2
+#
+---
+# -- Module: generic_service ----------------------------------------------- {{{
+#
+generic_service::release_version: 1.18.44-1
+generic_service::version: "%{hiera('generic_service::release_version')}"
+hs-p2api-redis: use1.cache.amazonaws.com
+generic_service::config_files:
+  /opt/%{hiera('my_role:service')}/conf/config.yml:
+    config_data:
+      logger:
+        level: debug
+#
+# -------------------------------------------------------------------------- }}}
