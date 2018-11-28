@@ -4,5 +4,4 @@ echo Test bien branch: $branch
 /bin/date +"Thoi gian log time job $JOB_NAME vao luc: %T_%d:%m:%y" >> timeresult
 
 
-
-aadd
+change 1
