@@ -1,6 +1,6 @@
 {
   "name": "dich_vu_du_lieu",
-  "version": "22.22.62",
+  "version": "22.22.63",
   "description": "Dịch vụ dữ liệu",
   "main": "index.js",
   "scripts": {
