@@ -3,6 +3,6 @@ node('master') {
       checkout scm
   }
   stage('Bump HS'){
-      build job: 'Bump.develop', parameters: [[$class: 'StringParameterValue', name: 'ParamA', value: paramAValue], [$class: 'StringParameterValue', name: 'ParamB', value: paramBValue]]
+   echo "123"
   }
 }
