@@ -8,7 +8,7 @@ node('master') {
         string(name: 'repository', value: "https://github.com/ngoducquyet/HS.git"),
     ]
   }
-    echo "Khong bump"
+    echo currentBuild.result
   }
   stage('Bump cicd'){
     catchError {
