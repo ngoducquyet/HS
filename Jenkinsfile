@@ -8,7 +8,7 @@ node('master') {
         string(name: 'repository', value: "https://github.com/ngoducquyet/HS.git"),
     ]
   }
-    echo "Ket qua"
+    echo "Does not bump"
     echo currentBuild.result
   }
   stage('Bump cicd'){
@@ -17,7 +17,7 @@ node('master') {
         string(name: 'repository', value: "https://github.com/ngoducquyet/cicd.git"),
     ]
   }
-    echo "Ket qua"
+    echo "Does not bump"
     echo currentBuild.result
   }
   stage('Bump Jenkinsfile'){
@@ -26,7 +26,7 @@ node('master') {
         string(name: 'repository', value: "https://github.com/ngoducquyet/Jenkinsfile.git"),
     ]
   }
-    echo "Ket qua"
+    echo "Does not bump"
     echo currentBuild.result
   }
   
