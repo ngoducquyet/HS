@@ -3,6 +3,8 @@ node('master') {
       checkout scm
   }
   stage('Bump HS'){
-   echo "123"
+    build job:'Bump.develop', parameters: [
+        string(name: 'repository', value: "https://github.com/ngoducquyet/HS.git"),
+    ]
   }
 }
