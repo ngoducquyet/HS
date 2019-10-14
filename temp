@@ -1,0 +1,61 @@
+({CallLog.RecvdDate} >= '2019-01-01')
+ 
+and
+ 
+({CallLog.CallStatus} <> 'Closed')
+ 
+and
+ 
+({Subset.CustID} <> 'ZIXDATACTR')
+ 
+and
+ 
+({Subset.CustID} <> 'ZIXTRASH')
+ 
+and
+ 
+({Subset.CustID} <> 'ZIXMSGCTR')
+ 
+and
+ 
+(
+ 
+  (
+ 
+    (
+ 
+      ({CallLog.CallType} = 'Change Request' )
+ 
+      or ({CallLog.CallType} = 'Cust Config Chg' )
+ 
+      or ({CallLog.CallType} = 'Cust Support Ch' )
+ 
+    )
+ 
+    and
+ 
+    ({Detail.ZxApproveNameOperations3} is empty )
+ 
+    and
+ 
+    ({Detail.ZxApproveNameSup} is empty )
+ 
+    and
+ 
+    ({Detail.ZxDeployStatus} <> 'Cancelled - Take no action' )
+ 
+    and
+ 
+    ({Detail.ZxDeployStatus} <> 'Cancelled' )
+ 
+    and
+ 
+    ({Detail.ZxDeployStatus} <> 'Closed' )
+ 
+    and
+ 
+    ({Detail.ZxDeployStatus} <> 'Complete' )
+ 
+  )
+ 
+)
